@@ -8,7 +8,7 @@ const prodBase = '/pacific-doc/'; // для GitHub Pages
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://agsfer.github.io',
-  	base: process.env.NODE_ENV === 'production' ? prodBase : devBase,
+  	base: 'pacific-doc/',
 	integrations: [
 		starlight({
 			title: 'Pacific Ai Documentation',
