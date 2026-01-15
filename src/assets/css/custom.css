@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #131e4f;
+	--sl-color-accent: #0048c4;
+	--sl-color-accent-high: #b3c7ff;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e4f1ed;
+	--sl-color-gray-2: #b6c6c2;
+	--sl-color-gray-3: #75938b;
+	--sl-color-gray-4: #425f58;
+	--sl-color-gray-5: #223e38;
+	--sl-color-gray-6: #102d26;
+	--sl-color-black: #0f1b18;
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #c7d6ff;
+	--sl-color-accent: #0048c4;
+	--sl-color-accent-high: #182775;
+	--sl-color-white: #0f1b18;
+	--sl-color-gray-1: #30465d;
+	--sl-color-gray-2: #223e38;
+	--sl-color-gray-3: #425f58;
+	--sl-color-gray-4: #75938b;
+	--sl-color-gray-5: #b6c6c2;
+	--sl-color-gray-6: #e4f1ed;
+	--sl-color-gray-7: #f1f8f6;
+	--sl-color-black: #ffffff;
+}
+
+
+body {
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+.df {
+    display: flex;
+}
+
+.shadow {
+  box-shadow: 0 25px 45px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.content-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-description {
+	font-size: 30px;
+	text-rendering: optimizeLegibility;
+	line-height: 42px;
+	padding: 0;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 84px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #101210;
+}
+
+.right-green-cir, .left-yellow-cir {
+    opacity: 1;
+    top: -267px;
+    left: 60px;
+    z-index: -1;
+    position: absolute;
+    visibility: visible;
+}
+.right-green-cir {
+	left: auto;
+    top: -167px;
+	right: 160px;
+}
+
+.home-three-item {
+	position: relative;
+	border-radius: 26px;
+	z-index: 7;
+    background: #fff;
+	transition: .3s;
+	height: 100%;
+	padding: 41px 35px 57px 45px;	
+}
+
+.home-three-item figure {
+	width: 75px;
+	transition: .3s;
+	height: 75px;
+	justify-content: center;
+	border-radius: 75px;
+	margin-bottom: 15px;
+    background: #219780;
+    color: rgb(0, 71, 194);
+	padding: 10px;
+}
+
+.home-three-item h3 {
+	font-weight: 500;
+	transition: .3s;
+	font-size: 36px;
+    line-height: 40px;
+	margin-bottom: 12px;
+}
+
+.home-three-item p {
+	font-weight: 500;
+	font-size: 20px;
+	transition: .3s;
+	line-height: 140%;
+	color: #30465d;
+    margin-bottom: 30px;
+}
