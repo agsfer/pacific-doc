@@ -2,11 +2,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const devBase = '/'; // для localhost
+const prodBase = '/pacific-doc/'; // для GitHub Pages
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://agsfer.github.io',
-  	base: '/',
+  	base: process.env.NODE_ENV === 'production' ? prodBase : devBase,
 	integrations: [
 		starlight({
 			title: 'Pacific Ai Documentation',
